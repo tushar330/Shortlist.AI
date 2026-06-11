@@ -1,0 +1,6 @@
+# Development, evaluation and sandbox-app dependencies (not needed for ranking)
+-r requirements.txt
+pytest>=8.0
+pandas>=2.2
+psutil>=5.9
+streamlit>=1.37

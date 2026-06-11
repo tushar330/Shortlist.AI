@@ -1,0 +1,10 @@
+# Shortlist.AI — runtime dependencies for the ranking step (CPU-only, offline)
+numpy>=1.26,<3
+PyYAML>=6.0
+scikit-learn>=1.4,<2
+orjson>=3.9
+
+# Optional dense/cross-encoder channels (ONNX, CPU). The pipeline degrades
+# gracefully to lexical-only mode if these are not installed.
+fastembed>=0.5,<1
+onnxruntime>=1.18
