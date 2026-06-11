@@ -1,0 +1,282 @@
+meta:
+  source: job_description
+  title: Senior AI Engineer — Founding Team
+  compiled_on: '2026-06-11'
+  compiler_version: 1
+experience:
+  min_years: 5
+  max_years: 9
+  ideal_min: 6
+  ideal_max: 8
+  hard_requirement: false
+locations:
+  country_preference: India
+  preferred_cities:
+  - pune
+  - noida
+  welcome_cities:
+  - delhi_ncr
+  - hyderabad
+  - mumbai
+  relocation_ok: true
+  visa_sponsorship: false
+  work_mode: hybrid
+notice:
+  loved_max_days: 30
+  buyout_max_days: 30
+  soft_max_days: 30
+behavioral:
+  requires_active_candidate: true
+  response_rate_floor: 0.1
+  open_to_work_preferred: true
+requirements:
+  must_have:
+  - facet: embeddings_retrieval
+    label: Embeddings-based retrieval in production
+    weight: 1.0
+    jd_terms_matched:
+    - bge
+    - e5
+    - embedding
+    - embedding drift
+    - embeddings
+    - hybrid retrieval
+    - index refresh
+    - openai embeddings
+    - sentence-transformers
+    jd_evidence:
+    - Deep technical depth in modern ML systems — embeddings, retrieval, ranking, LLMs, fine-tuning.
+    - This will involve embeddings, hybrid retrieval, and probably some LLM-based re-ranking, but the
+      architecture is your call.
+    - Production experience with embeddings-based retrieval systems (sentence-transformers, OpenAI embeddings,
+      BGE, E5, or similar) deployed to real users.
+  - facet: eval_rigor
+    label: Evaluation frameworks for ranking systems
+    weight: 1.0
+    jd_terms_matched:
+    - a/b test
+    - a/b testing
+    - evaluation infrastructure
+    - mrr
+    - ndcg
+    - offline-to-online
+    jd_evidence:
+    - 'Weeks 9-12: Set up the evaluation infrastructure — offline benchmarks, online A/B testing, recruiter-feedback
+      loops — so we can keep improving without flying blind.'
+    - Hands-on experience designing evaluation frameworks for ranking systems — NDCG, MRR, MAP, offline-to-online
+      correlation, A/B test interpretation.
+  - facet: production_shipping
+    label: Production deployment and operational ownership
+    weight: 1.0
+    jd_terms_matched:
+    - deployed
+    - deployment
+    - inference
+    - production
+    - real users
+    - regression
+    - scale
+    - shipped
+    jd_evidence:
+    - Scrappy product-engineering attitude — willing to ship a working ranker in a week even if the underlying
+      ML is "obviously suboptimal," because we need to learn from real users before we know what to actually
+      optimize for.
+    - Beyond that, you'll be driving the long-term architecture of how we do candidate-JD matching at
+      scale, mentoring the next round of hires (we're growing the team from 4 to 12 engineers in the next
+      year), and working closely with our recruite
+    - If you've spent your career in pure research environments (academic labs, research-only roles) without
+      any production deployment — we will not move forward.
+  - facet: python_engineering
+    label: Strong Python engineering
+    weight: 1.0
+    jd_terms_matched:
+    - code quality
+    - python
+    jd_evidence:
+    - Strong Python.
+    - Yes really, we care about code quality.
+  - facet: ranking_recsys
+    label: Ranking, recommendation and matching systems
+    weight: 1.0
+    jd_terms_matched:
+    - candidate-jd matching
+    - ranking
+    - ranking system
+    - recommendation
+    jd_evidence:
+    - Deep technical depth in modern ML systems — embeddings, retrieval, ranking, LLMs, fine-tuning.
+    - That means the ranking, retrieval, and matching systems that decide what recruiters see when they
+      search for candidates and what candidates see when they search for roles.
+    - 'Weeks 4-8: Ship a v2 ranking system that demonstrably improves recruiter-engagement metrics.'
+  - facet: vector_infra
+    label: Vector database / hybrid search infrastructure
+    weight: 1.0
+    jd_terms_matched:
+    - bm25
+    - elasticsearch
+    - faiss
+    - hybrid search
+    - milvus
+    - opensearch
+    - pinecone
+    - qdrant
+    - weaviate
+    jd_evidence:
+    - 'Weeks 1-3: Audit what we currently have (it''s mostly BM25 + rule-based scoring, working but not
+      great).'
+    - Production experience with vector databases or hybrid search infrastructure — Pinecone, Weaviate,
+      Qdrant, Milvus, OpenSearch, Elasticsearch, FAISS, or something similar.
+    - A Tier 5 candidate may not use the words "RAG" or "Pinecone" in their profile, but if their career
+      history shows they built a recommendation system at a product company, they're a fit.
+  nice_to_have:
+  - facet: distributed_scale
+    label: Distributed systems / large-scale inference
+    weight: 0.4
+    jd_terms_matched:
+    - distributed
+    - inference optimization
+    jd_evidence:
+    - Background in distributed systems or large-scale inference optimization
+  - facet: hrtech_marketplace
+    label: HR-tech, recruiting or marketplace products
+    weight: 0.4
+    jd_terms_matched:
+    - hiring
+    - hr-tech
+    - marketplace
+    - recruiter
+    - recruiting
+    - talent
+    jd_evidence:
+    - 'Company: Redrob AI (Series A AI-native talent intelligence platform)'
+    - If you've spent your career bouncing between early-stage startups and you want to "just code" without
+      having to think about product or recruiter workflows or eval frameworks, this also isn't it.
+    - 'Weeks 4-8: Ship a v2 ranking system that demonstrably improves recruiter-engagement metrics.'
+  - facet: learning_to_rank
+    label: Learning-to-rank models
+    weight: 0.4
+    jd_terms_matched:
+    - learning-to-rank
+    - xgboost
+    jd_evidence:
+    - Experience with learning-to-rank models (XGBoost-based or neural)
+  - facet: llm_engineering
+    label: LLM fine-tuning and integration
+    weight: 0.4
+    jd_terms_matched:
+    - fine-tuning
+    - llm
+    - lora
+    - peft
+    - qlora
+    - rag
+    jd_evidence:
+    - Deep technical depth in modern ML systems — embeddings, retrieval, ranking, LLMs, fine-tuning.
+    - This will involve embeddings, hybrid retrieval, and probably some LLM-based re-ranking, but the
+      architecture is your call.
+    - If your "AI experience" consists primarily of recent (under 12 months) projects using LangChain
+      to call OpenAI — we will probably not move forward, unless you can demonstrate substantial pre-LLM-era
+      ML production experience.
+  - facet: open_source
+    label: Open-source / external validation
+    weight: 0.4
+    jd_terms_matched:
+    - blog
+    - github
+    - open-source
+    jd_evidence:
+    - Open-source contributions in the AI/ML space
+    - If your GitHub is full of LangChain tutorials and your blog posts are "How I used [hot framework]
+      to build [demo]" — that's fine but it's not what we need.
+    - People whose work has been entirely on closed-source proprietary systems for 5+ years without external
+      validation (papers, talks, open-source).
+  contextual:
+  - facet: nlp_ir
+    label: NLP / information retrieval foundations
+    weight: 0.15
+    jd_terms_matched:
+    - nlp
+    jd_evidence:
+    - People whose primary expertise is computer vision, speech, or robotics without significant NLP/IR
+      exposure.
+disqualifiers:
+- type: research_only
+  label: Pure research career without production deployment
+  evidence:
+  - If you've spent your career in pure research environments (academic labs, research-only roles) without
+    any production deployment — we will not move forward. We are explicit about this. We've tried it twice
+    and it didn't work for either side
+- type: recent_wrapper_only
+  label: AI experience limited to recent thin LLM-API work
+  evidence:
+  - If your "AI experience" consists primarily of recent (under 12 months) projects using LangChain to
+    call OpenAI — we will probably not move forward, unless you can demonstrate substantial pre-LLM-era
+    ML production experience. We're looking f
+- type: non_coding_architect
+  label: No hands-on production code in recent role
+  evidence:
+  - If you are a senior engineer who hasn't written production code in the last 18 months because you've
+    moved into "architecture" or "tech lead" roles — we will probably not move forward. This role writes
+    code.
+- type: title_chaser
+  label: Company-hopping optimized for title escalation
+  evidence:
+  - Title-chasers. If your career trajectory shows you optimizing for "Senior" → "Staff" → "Principal"
+    titles by switching companies every 1.5 years, we're not a fit. We need someone who plans to be here
+    for 3+ years.
+- type: framework_enthusiast
+  label: Framework tutorials over systems thinking
+  evidence:
+  - Framework enthusiasts. If your GitHub is full of LangChain tutorials and your blog posts are "How
+    I used [hot framework] to build [demo]" — that's fine but it's not what we need. We need people who
+    think about systems, not frameworks.
+- type: consulting_only
+  label: Entire career at IT services / consulting firms
+  evidence:
+  - People who have only worked at consulting firms (TCS, Infosys, Wipro, Accenture, Cognizant, Capgemini,
+    etc.) in their entire career. We've had bad fit experiences in both directions. If you're currently
+    at one of these companies but have pr
+- type: cv_speech_only
+  label: CV/speech/robotics specialism without NLP/IR exposure
+  evidence:
+  - People whose primary expertise is computer vision, speech, or robotics without significant NLP/IR
+    exposure. We respect your work but you'd be re-learning fundamentals here.
+- type: closed_source_no_validation
+  label: Long closed-source career with no external validation
+  evidence:
+  - People whose work has been entirely on closed-source proprietary systems for 5+ years without external
+    validation (papers, talks, open-source). We need to see how you think, not just trust that you can
+    think.
+facet_queries:
+- Embeddings-based retrieval in production. Deep technical depth in modern ML systems — embeddings, retrieval,
+  ranking, LLMs, fine-tuning.
+- 'Evaluation frameworks for ranking systems. Weeks 9-12: Set up the evaluation infrastructure — offline
+  benchmarks, online A/B testing, recruiter-feedback loops — so we can keep improving without flying blind.'
+- Production deployment and operational ownership. Scrappy product-engineering attitude — willing to ship
+  a working ranker in a week even if the underlying ML is "obviously suboptimal," because we need to learn
+  from real users before we know what to actually optimize for.
+- Strong Python engineering. Strong Python.
+- Ranking, recommendation and matching systems. Deep technical depth in modern ML systems — embeddings,
+  retrieval, ranking, LLMs, fine-tuning.
+- 'Vector database / hybrid search infrastructure. Weeks 1-3: Audit what we currently have (it''s mostly
+  BM25 + rule-based scoring, working but not great).'
+- Distributed systems / large-scale inference. Background in distributed systems or large-scale inference
+  optimization
+- 'HR-tech, recruiting or marketplace products. Company: Redrob AI (Series A AI-native talent intelligence
+  platform)'
+- Learning-to-rank models. Experience with learning-to-rank models (XGBoost-based or neural)
+- LLM fine-tuning and integration. Deep technical depth in modern ML systems — embeddings, retrieval,
+  ranking, LLMs, fine-tuning.
+- Open-source / external validation. Open-source contributions in the AI/ML space
+ideal_candidate_paragraph: 'How to read between the lines The "ideal candidate" we''re imagining is roughly:
+  6-8 years total experience, of which 4-5 are in applied ML/AI roles at product companies (not pure services).
+  Has shipped at least one end-to-end ranking, search, or recommendation system to real users at meaningful
+  scale. Has strong opinions about retrieval (hybrid vs dense), evaluation (offline vs online), and LLM
+  integration (when to fine-tune vs prompt) — and can defend them with reference to systems they actually
+  built. Located in or willing to relocate to Noida or Pune. Active on Redrob platform (or has clear signal
+  of being in the job market) so we can actually talk to them. We are aware this is a narrow profile.
+  We''re not expecting to find many matches in a 100K candidate pool. We''re explicitly OK with that —
+  we''d rather see 10 great matches than 1000 maybes. Final note for the participants of the Redrob hackathon
+  If you''re reading this in the context of the Intelligent Candidate Discovery & Ranking Challenge: The
+  "right answer" to this JD is not "find candidates whose skills section contains the most AI keywords."
+  That''s a trap we''ve explicitly built into the dataset. The right answer involves '

@@ -1,0 +1,296 @@
+# Shortlist.AI domain ontology
+# -----------------------------
+# Single source of truth for the vocabulary shared by the JD compiler (what a
+# job asks for) and the evidence engine (what a candidate demonstrably did).
+# Extending the platform to a new domain means extending this file, not code.
+
+facets:
+  embeddings_retrieval:
+    label: "Embeddings-based retrieval in production"
+    terms:
+      - embedding
+      - embeddings
+      - sentence-transformers
+      - sentence transformers
+      - bge
+      - e5
+      - openai embeddings
+      - dense retrieval
+      - dense vector
+      - semantic search
+      - vector search
+      - embedding drift
+      - index refresh
+      - retrieval quality
+      - retrieval system
+      - hybrid retrieval
+      - two-tower
+      - bi-encoder
+      - cross-encoder
+
+  vector_infra:
+    label: "Vector database / hybrid search infrastructure"
+    terms:
+      - vector database
+      - vector db
+      - pinecone
+      - weaviate
+      - qdrant
+      - milvus
+      - faiss
+      - opensearch
+      - elasticsearch
+      - vespa
+      - pgvector
+      - hybrid search
+      - bm25
+      - inverted index
+      - lucene
+      - solr
+      - haystack
+
+  ranking_recsys:
+    label: "Ranking, recommendation and matching systems"
+    terms:
+      - ranking
+      - ranking model
+      - ranking system
+      - re-rank
+      - reranking
+      - recommendation
+      - recommender
+      - recsys
+      - personalization
+      - personalisation
+      - discovery feed
+      - search relevance
+      - matching system
+      - candidate-jd matching
+      - collaborative filtering
+      - matrix factorization
+      - feed ranking
+
+  learning_to_rank:
+    label: "Learning-to-rank models"
+    terms:
+      - learning-to-rank
+      - learning to rank
+      - ltr
+      - lambdamart
+      - xgboost
+      - lightgbm
+      - pairwise ranking
+      - listwise
+
+  eval_rigor:
+    label: "Evaluation frameworks for ranking systems"
+    terms:
+      - ndcg
+      - mrr
+      - "map@"
+      - mean average precision
+      - precision@
+      - recall@
+      - a/b test
+      - ab test
+      - a/b testing
+      - offline evaluation
+      - online evaluation
+      - offline-online
+      - offline-to-online
+      - eval harness
+      - evaluation framework
+      - evaluation infrastructure
+      - offline benchmark
+      - interleaving
+      - relevance judgment
+
+  llm_engineering:
+    label: "LLM fine-tuning and integration"
+    terms:
+      - llm
+      - large language model
+      - fine-tuning
+      - fine-tuned
+      - finetuning
+      - lora
+      - qlora
+      - peft
+      - instruction tuning
+      - rag
+      - retrieval-augmented
+      - prompt engineering
+      - llama
+      - mistral
+      - distillation
+      - preference pairs
+      - rlhf
+      - dpo
+
+  nlp_ir:
+    label: "NLP / information retrieval foundations"
+    terms:
+      - nlp
+      - natural language processing
+      - information retrieval
+      - text classification
+      - named entity
+      - ner
+      - tokenization
+      - transformer
+      - bert
+      - text mining
+      - query understanding
+
+  python_engineering:
+    label: "Strong Python engineering"
+    terms:
+      - python
+      - pyspark
+      - pytest
+      - code quality
+      - code review
+
+  production_shipping:
+    label: "Production deployment and operational ownership"
+    terms:
+      - production
+      - shipped
+      - deployed
+      - deployment
+      - live a/b
+      - real users
+      - serving
+      - inference
+      - latency
+      - monitoring
+      - on-call
+      - incident
+      - sla
+      - rollout
+      - canary
+      - regression
+      - data drift
+      - model drift
+      - scale
+      - throughput
+
+  distributed_scale:
+    label: "Distributed systems / large-scale inference"
+    terms:
+      - distributed
+      - kubernetes
+      - kafka
+      - spark
+      - ray
+      - horizontal scaling
+      - sharding
+      - high availability
+      - inference optimization
+      - quantization
+      - onnx
+      - triton
+
+  open_source:
+    label: "Open-source / external validation"
+    terms:
+      - open-source
+      - open source
+      - github
+      - oss
+      - maintainer
+      - contributor
+      - published
+      - conference talk
+      - blog
+
+  hrtech_marketplace:
+    label: "HR-tech, recruiting or marketplace products"
+    terms:
+      - hr-tech
+      - hrtech
+      - recruiting
+      - recruiter
+      - talent
+      - hiring
+      - job board
+      - marketplace
+      - two-sided
+      - candidate profiles
+
+# Disqualifier detectors the platform knows how to evaluate against a candidate.
+# The JD compiler activates a detector when the JD's "do not want" language
+# matches its cues; JDs without such language leave the detector off.
+disqualifier_detectors:
+  research_only:
+    label: "Pure research career without production deployment"
+    jd_cues: [pure research, academic lab, research-only, research labs, without any production deployment]
+  recent_wrapper_only:
+    label: "AI experience limited to recent thin LLM-API work"
+    jd_cues: [langchain to call, under 12 months, recent (under, wrapper, call openai]
+  non_coding_architect:
+    label: "No hands-on production code in recent role"
+    jd_cues: [hasn't written production code, architecture” roles, tech lead” roles, this role writes code]
+  title_chaser:
+    label: "Company-hopping optimized for title escalation"
+    jd_cues: [title-chasers, switching companies every, optimizing for]
+  framework_enthusiast:
+    label: "Framework tutorials over systems thinking"
+    jd_cues: [framework enthusiasts, langchain tutorials, hot framework]
+  consulting_only:
+    label: "Entire career at IT services / consulting firms"
+    jd_cues: [consulting firms, tcs, infosys, wipro, accenture, cognizant, capgemini]
+  cv_speech_only:
+    label: "CV/speech/robotics specialism without NLP/IR exposure"
+    jd_cues: [computer vision, speech, robotics, without significant nlp]
+  closed_source_no_validation:
+    label: "Long closed-source career with no external validation"
+    jd_cues: [closed-source proprietary, without external validation]
+
+# Candidate-side reference data shared across modules.
+consulting_employers:
+  - tcs
+  - tata consultancy
+  - infosys
+  - wipro
+  - accenture
+  - cognizant
+  - capgemini
+  - hcl
+  - tech mahindra
+  - mindtree
+  - ltimindtree
+  - mphasis
+  - dxc
+  - ibm consulting
+  - deloitte
+  - kpmg
+  - ey
+  - pwc
+  - genpact
+  - hexaware
+  - zensar
+  - birlasoft
+  - cgi
+  - ust global
+  - virtusa
+
+india_cities:
+  pune: [pune]
+  noida: [noida, greater noida]
+  delhi_ncr: [delhi, new delhi, gurgaon, gurugram, faridabad, ghaziabad, ncr]
+  hyderabad: [hyderabad, secunderabad]
+  mumbai: [mumbai, navi mumbai, thane]
+  bengaluru: [bengaluru, bangalore]
+  chennai: [chennai]
+  kolkata: [kolkata]
+  ahmedabad: [ahmedabad]
+  jaipur: [jaipur]
+  trivandrum: [trivandrum, thiruvananthapuram]
+  kochi: [kochi, cochin]
+  indore: [indore]
+  chandigarh: [chandigarh, mohali]
+  coimbatore: [coimbatore]
+  bhubaneswar: [bhubaneswar]
+  nagpur: [nagpur]
+  lucknow: [lucknow]
