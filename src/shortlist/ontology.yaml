@@ -27,6 +27,10 @@ facets:
       - two-tower
       - bi-encoder
       - cross-encoder
+      - vector representation
+      - vector representations
+      - text encoder
+      - text encoders
 
   vector_infra:
     label: "Vector database / hybrid search infrastructure"
@@ -69,6 +73,10 @@ facets:
       - collaborative filtering
       - matrix factorization
       - feed ranking
+      - matching engine
+      - results ranking
+      - search ranking
+      - orders results
 
   learning_to_rank:
     label: "Learning-to-rank models"
@@ -104,6 +112,10 @@ facets:
       - offline benchmark
       - interleaving
       - relevance judgment
+      - live experiment
+      - live experiments
+      - measurement framework
+      - ranking metrics
 
   llm_engineering:
     label: "LLM fine-tuning and integration"
