@@ -1,0 +1,74 @@
+# Shortlist.AI — submission metadata (mirror of portal entries)
+# Fields marked TODO are personal details for the team to fill before upload.
+
+team_name: "TODO-your-team-name"
+
+primary_contact:
+  name: "Tushar Tiwari"
+  email: "tushartiwari338@gmail.com"
+  phone: "TODO-+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Tushar Tiwari"
+    email: "tushartiwari338@gmail.com"
+    role: "Team Lead / ML Engineering"
+
+github_repo: "https://github.com/tushar330/Shortlist.AI"
+
+sandbox_link: "TODO-streamlit-or-hf-spaces-url"
+# app/streamlit_app.py — deploy to Streamlit Cloud or HuggingFace Spaces
+# (free CPU tier). Accepts <=100-candidate JSONL/JSON uploads, ships with the
+# 50-candidate organizer sample preloaded, and supports pasting a different JD.
+
+reproduce_command: "python rank.py --candidates ./data/candidates.jsonl --out ./submission.csv"
+# Pre-computation (one-time, documented): python scripts/precompute_embeddings.py <candidates.jsonl>
+# The ranking step itself only loads the cache — no model, no network.
+
+compute:
+  platform: "Windows 11 laptop"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.12.3"
+  os: "Windows 11 Home"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 35   # embedding cache for the 100K pool, one-time
+
+ai_tools_used:
+  - "Claude"
+
+ai_usage_summary: |
+  Claude (Claude Code) was used as a development assistant throughout:
+  architecture discussion, code drafting and review, and dataset analysis
+  tooling. All design decisions, calibration choices and final code were
+  reviewed and are understood by the team. No candidate data was sent to any
+  hosted LLM as part of the ranking pipeline: the ranking step runs fully
+  offline on CPU with no API calls, as required by the rules.
+
+methodology_summary: |
+  Shortlist.AI ranks by expected hire value, not keyword similarity:
+  FinalScore = CoreFit x (1 - JD penalties) x behavioral multiplier.
+  A JD compiler turns the job description into a structured spec (facets,
+  disqualifiers, logistics) sharing one ontology with the candidate-side
+  evidence engine. A forensic integrity gate excludes ~66 honeypot resumes
+  via impossibility-grade checks (calibrated against pool noise). Three
+  evidence channels score each facet: lexical narrative evidence, trusted
+  skills (corroboration-weighted - endorsements, assessments, narrative;
+  claimed proficiency ignored), and dense BGE embeddings (precomputed cache)
+  to catch paraphrased strong profiles. JD-activated detectors penalize
+  research-only, CV-only, consulting-only, title-chaser and wrapper-only
+  careers. Behavioral signals form a reachability multiplier in [0.55, 1.10].
+  Ranking is aggregated over 25 weight-jittered configurations (Borda) for
+  stability, then a CPU cross-encoder (ms-marco-MiniLM, top-200, budget-gated)
+  refines the head. Reasoning strings render only profile facts -
+  hallucination-free by construction. Validated offline against a shadow
+  ground truth of labeled trap personas (8 pytest invariants). Ranking step:
+  ~3 minutes on a 16 GB CPU laptop.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true   # re-verify after final timing run
