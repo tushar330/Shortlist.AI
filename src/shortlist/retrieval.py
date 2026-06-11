@@ -17,7 +17,7 @@ from __future__ import annotations
 import re
 
 from .dense import DenseChannel
-from .evidence import EvidenceEngine
+from .evidence import EvidenceEngine, _facet_regex
 from .loader import Candidate
 
 # Titles that always survive to full scoring regardless of channel hits —
@@ -31,16 +31,35 @@ SAFETY_TITLE_RE = re.compile(
 DENSE_TOP_K = 2000
 
 
+def spec_must_haves(spec: dict) -> list[dict]:
+    return spec["requirements"]["must_have"]
+
+# Facets whose vocabulary is too generic to indicate domain fit on its own
+# ("production", "python", "github" appear in most tech narratives). They
+# still contribute to scoring — they just don't earn a deep-scoring slot.
+GENERIC_FACETS = frozenset(
+    {"production_shipping", "python_engineering", "open_source", "hrtech_marketplace"}
+)
+
+
 class HybridRetriever:
     def __init__(self, engine: EvidenceEngine, dense: DenseChannel | None):
         self.engine = engine
         self.dense = dense
-        # One combined alternation over every active facet term: a single
-        # cheap regex pass decides whether deep evidence extraction is worth it.
-        all_terms = sorted(
-            {t for pats in engine._patterns.values() for t, _ in pats}, key=len, reverse=True
-        )
-        self._screen = re.compile("|".join(re.escape(t) for t in all_terms), re.IGNORECASE)
+        # One combined alternation over the MUST-HAVE distinctive facet terms.
+        # Nice-to-have vocabulary cannot earn a deep-scoring slot on its own:
+        # pool measurement showed "rag"/"llm" course-dabbling mentions and
+        # kubernetes/kafka ops talk wave half the pool through. Word boundaries
+        # matter too — bare re.escape lets "rag" hit "storage"/"average".
+        must_facets = {r["facet"] for r in spec_must_haves(engine.spec)}
+        terms = {
+            t
+            for facet in must_facets
+            if facet not in GENERIC_FACETS and facet in engine.active_facets
+            for t in engine.ontology["facets"][facet]["terms"]
+        }
+        self._screen = _facet_regex(sorted(terms))
+        self._screen_terms = {t.lower() for t in terms}
 
     def shortlist(
         self, candidates: list[Candidate], spec: dict
@@ -61,6 +80,14 @@ class HybridRetriever:
                 c.cid in dense_rank
                 or SAFETY_TITLE_RE.search(c.title)
                 or self._screen.search(c.narrative_lc)
+                or self._assessment_hook(c)
             ):
                 keep.append(c)
         return keep, dense_scores
+
+    def _assessment_hook(self, c: Candidate) -> bool:
+        """Platform assessments in must-have vocabulary keep a candidate in —
+        the paraphrased-profile recovery channel must survive retrieval too."""
+        return any(
+            k.lower() in self._screen_terms for k in c.sig.get("skill_assessment_scores", {})
+        )

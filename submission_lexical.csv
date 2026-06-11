@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0018499,1,0.752012,Senior Machine Learning Engineer with 7.2 yrs; strongest component band 1.00; behavioral x0.98.
+CAND_0077337,2,0.731304,Staff Machine Learning Engineer with 7.0 yrs; strongest component band 1.00; behavioral x0.98.
+CAND_0081846,3,0.707051,Lead AI Engineer with 6.7 yrs; strongest component band 1.00; behavioral x0.96.
+CAND_0079387,4,0.690178,AI Engineer with 6.9 yrs; strongest component band 1.00; behavioral x0.96.
+CAND_0046064,5,0.688626,Senior NLP Engineer with 8.9 yrs; strongest component career 1.00; behavioral x0.95.
+CAND_0002025,6,0.682417,Senior AI Engineer with 5.9 yrs; strongest component career 1.00; behavioral x0.99.
+CAND_0064326,7,0.666677,Search Engineer with 7.6 yrs; strongest component band 1.00; behavioral x1.00.
+CAND_0027691,8,0.651483,NLP Engineer with 6.5 yrs; strongest component band 1.00; behavioral x0.96.
+CAND_0008425,9,0.651312,Senior NLP Engineer with 7.8 yrs; strongest component band 1.00; behavioral x0.90.
+CAND_0086022,10,0.648014,Senior Applied Scientist with 5.3 yrs; strongest component career 1.00; behavioral x0.92.
+CAND_0071974,11,0.642666,Senior AI Engineer with 7.8 yrs; strongest component band 1.00; behavioral x0.93.
+CAND_0074225,12,0.642085,Machine Learning Engineer with 4.3 yrs; strongest component career 1.00; behavioral x0.96.
+CAND_0052328,13,0.639717,Recommendation Systems Engineer with 6.5 yrs; strongest component band 1.00; behavioral x0.96.
+CAND_0068811,14,0.621530,Applied ML Engineer with 8.0 yrs; strongest component band 1.00; behavioral x0.96.
+CAND_0042029,15,0.619473,Senior Data Scientist with 6.5 yrs; strongest component band 1.00; behavioral x0.89.
+CAND_0079064,16,0.618345,Senior Data Scientist with 5.2 yrs; strongest component career 1.00; behavioral x0.96.
+CAND_0005260,17,0.617994,Senior NLP Engineer with 5.2 yrs; strongest component career 1.00; behavioral x0.91.
+CAND_0028793,18,0.616571,Search Engineer with 7.2 yrs; strongest component band 1.00; behavioral x0.90.
+CAND_0011687,19,0.614854,Senior NLP Engineer with 7.8 yrs; strongest component band 1.00; behavioral x0.98.
+CAND_0069905,20,0.614853,Applied ML Engineer with 6.6 yrs; strongest component band 1.00; behavioral x0.93.
+CAND_0007412,21,0.613257,Applied ML Engineer with 7.4 yrs; strongest component band 1.00; behavioral x0.94.
+CAND_0070398,22,0.613256,Machine Learning Engineer with 7.2 yrs; strongest component band 1.00; behavioral x0.88.
+CAND_0052682,23,0.607783,NLP Engineer with 6.6 yrs; strongest component band 1.00; behavioral x0.95.
+CAND_0053591,24,0.607782,AI Engineer with 5.3 yrs; strongest component career 1.00; behavioral x0.91.
+CAND_0039383,25,0.604157,Applied ML Engineer with 7.1 yrs; strongest component band 1.00; behavioral x0.92.
+CAND_0007009,26,0.594706,Recommendation Systems Engineer with 7.9 yrs; strongest component band 1.00; behavioral x0.94.
+CAND_0041610,27,0.594705,Recommendation Systems Engineer with 6.7 yrs; strongest component band 1.00; behavioral x0.95.
+CAND_0046525,28,0.594704,Senior Machine Learning Engineer with 6.1 yrs; strongest component band 1.00; behavioral x1.01.
+CAND_0074735,29,0.594703,Applied ML Engineer with 5.5 yrs; strongest component career 0.99; behavioral x0.92.
+CAND_0044855,30,0.589963,Senior Data Scientist with 6.6 yrs; strongest component band 1.00; behavioral x0.89.
+CAND_0030953,31,0.589962,Search Engineer with 7.8 yrs; strongest component band 1.00; behavioral x0.84.
+CAND_0044222,32,0.587870,AI Engineer with 7.7 yrs; strongest component band 1.00; behavioral x0.93.
+CAND_0037944,33,0.583408,Senior Data Scientist with 4.9 yrs; strongest component career 1.00; behavioral x0.89.
+CAND_0030031,34,0.582976,AI Engineer with 5.7 yrs; strongest component career 1.00; behavioral x0.92.
+CAND_0010257,35,0.579896,Senior Data Scientist with 6.5 yrs; strongest component band 1.00; behavioral x0.95.
+CAND_0017960,36,0.578854,Recommendation Systems Engineer with 7.7 yrs; strongest component band 1.00; behavioral x0.94.
+CAND_0041669,37,0.578853,Recommendation Systems Engineer with 8.0 yrs; strongest component band 1.00; behavioral x0.97.
+CAND_0058575,38,0.578114,AI Engineer with 5.8 yrs; strongest component career 1.00; behavioral x0.90.
+CAND_0077285,39,0.577461,Recommendation Systems Engineer with 5.5 yrs; strongest component career 0.94; behavioral x0.91.
+CAND_0062247,40,0.576469,AI Engineer with 7.3 yrs; strongest component band 1.00; behavioral x0.95.
+CAND_0054123,41,0.576468,Applied ML Engineer with 4.7 yrs; strongest component career 1.00; behavioral x0.92.
+CAND_0083307,42,0.574985,Search Engineer with 7.8 yrs; strongest component band 1.00; behavioral x0.89.
+CAND_0040887,43,0.574002,Machine Learning Engineer with 4.7 yrs; strongest component career 1.00; behavioral x0.93.
+CAND_0084819,44,0.572825,Search Engineer with 4.5 yrs; strongest component career 1.00; behavioral x0.92.
+CAND_0096142,45,0.570687,Applied ML Engineer with 5.0 yrs; strongest component career 1.00; behavioral x0.96.
+CAND_0042506,46,0.570686,Search Engineer with 4.2 yrs; strongest component career 1.00; behavioral x0.95.
+CAND_0080766,47,0.570685,Staff Machine Learning Engineer with 8.8 yrs; strongest component career 1.00; behavioral x0.89.
+CAND_0030348,48,0.570605,Machine Learning Engineer with 4.5 yrs; strongest component career 1.00; behavioral x0.94.
+CAND_0040117,49,0.567321,Recommendation Systems Engineer with 6.5 yrs; strongest component band 1.00; behavioral x0.91.
+CAND_0055905,50,0.566360,Senior Machine Learning Engineer with 8.1 yrs; strongest component band 0.92; behavioral x0.92.
+CAND_0075574,51,0.566168,Machine Learning Engineer with 5.7 yrs; strongest component band 0.92; behavioral x0.93.
+CAND_0075249,52,0.563954,Applied ML Engineer with 6.2 yrs; strongest component band 1.00; behavioral x0.91.
+CAND_0044883,53,0.563410,AI Engineer with 6.3 yrs; strongest component band 1.00; behavioral x0.86.
+CAND_0061265,54,0.562642,Recommendation Systems Engineer with 6.6 yrs; strongest component band 1.00; behavioral x0.93.
+CAND_0015578,55,0.562641,AI Engineer with 5.4 yrs; strongest component career 1.00; behavioral x0.90.
+CAND_0081852,56,0.562434,Senior Data Scientist with 5.9 yrs; strongest component career 1.00; behavioral x0.95.
+CAND_0027801,57,0.561673,NLP Engineer with 7.4 yrs; strongest component band 1.00; behavioral x0.91.
+CAND_0060054,58,0.561672,AI Engineer with 6.4 yrs; strongest component band 1.00; behavioral x0.89.
+CAND_0096172,59,0.559749,NLP Engineer with 5.2 yrs; strongest component career 1.00; behavioral x0.86.
+CAND_0064904,60,0.557555,AI Engineer with 4.9 yrs; strongest component career 1.00; behavioral x0.92.
+CAND_0036184,61,0.555849,Recommendation Systems Engineer with 6.0 yrs; strongest component band 1.00; behavioral x0.98.
+CAND_0093912,62,0.555275,Senior Data Scientist with 5.3 yrs; strongest component band 0.92; behavioral x0.96.
+CAND_0039838,63,0.554346,Recommendation Systems Engineer with 4.9 yrs; strongest component career 0.94; behavioral x0.90.
+CAND_0065195,64,0.551366,Search Engineer with 5.1 yrs; strongest component career 1.00; behavioral x0.97.
+CAND_0098846,65,0.551365,AI Engineer with 7.6 yrs; strongest component band 1.00; behavioral x0.95.
+CAND_0011432,66,0.550659,Senior Data Scientist with 7.6 yrs; strongest component band 1.00; behavioral x0.90.
+CAND_0033861,67,0.550658,Senior NLP Engineer with 8.0 yrs; strongest component band 1.00; behavioral x0.79.
+CAND_0070525,68,0.546904,Senior Software Engineer (ML) with 5.4 yrs; strongest component career 1.00; behavioral x1.02.
+CAND_0026532,69,0.546302,Recommendation Systems Engineer with 4.8 yrs; strongest component career 1.00; behavioral x0.88.
+CAND_0051292,70,0.546301,Applied ML Engineer with 5.2 yrs; strongest component band 0.92; behavioral x0.90.
+CAND_0053695,71,0.546300,Recommendation Systems Engineer with 5.8 yrs; strongest component band 0.92; behavioral x0.89.
+CAND_0018722,72,0.543790,Recommendation Systems Engineer with 6.6 yrs; strongest component band 1.00; behavioral x0.92.
+CAND_0051004,73,0.543789,Senior Data Scientist with 4.7 yrs; strongest component career 1.00; behavioral x0.96.
+CAND_0016163,74,0.539348,Applied ML Engineer with 6.7 yrs; strongest component band 1.00; behavioral x0.92.
+CAND_0054394,75,0.539347,Recommendation Systems Engineer with 4.1 yrs; strongest component career 1.00; behavioral x0.96.
+CAND_0013613,76,0.539346,Machine Learning Engineer with 4.7 yrs; strongest component career 0.98; behavioral x0.86.
+CAND_0088025,77,0.539345,Staff Machine Learning Engineer with 8.6 yrs; strongest component band 0.92; behavioral x0.95.
+CAND_0081053,78,0.538123,NLP Engineer with 5.4 yrs; strongest component career 1.00; behavioral x0.92.
+CAND_0066376,79,0.536867,Applied ML Engineer with 5.7 yrs; strongest component career 1.00; behavioral x0.91.
+CAND_0086151,80,0.531076,Recommendation Systems Engineer with 7.7 yrs; strongest component band 1.00; behavioral x0.86.
+CAND_0091909,81,0.529636,Machine Learning Engineer with 6.9 yrs; strongest component band 1.00; behavioral x0.91.
+CAND_0031593,82,0.529635,Search Engineer with 7.8 yrs; strongest component band 1.00; behavioral x0.89.
+CAND_0094759,83,0.527589,Lead AI Engineer with 8.6 yrs; strongest component band 0.92; behavioral x0.83.
+CAND_0006567,84,0.525712,Senior AI Engineer with 7.9 yrs; strongest component band 1.00; behavioral x0.98.
+CAND_0005649,85,0.525711,Senior Data Scientist with 7.4 yrs; strongest component band 1.00; behavioral x0.91.
+CAND_0020708,86,0.525710,Search Engineer with 4.2 yrs; strongest component career 1.00; behavioral x0.92.
+CAND_0089552,87,0.521398,Machine Learning Engineer with 6.0 yrs; strongest component band 1.00; behavioral x0.82.
+CAND_0007411,88,0.521397,Senior Machine Learning Engineer with 8.0 yrs; strongest component band 1.00; behavioral x0.81.
+CAND_0011162,89,0.519020,Recommendation Systems Engineer with 5.8 yrs; strongest component career 0.94; behavioral x0.93.
+CAND_0030468,90,0.519019,Senior Applied Scientist with 5.4 yrs; strongest component band 0.92; behavioral x0.96.
+CAND_0009691,91,0.519018,Applied ML Engineer with 6.2 yrs; strongest component band 1.00; behavioral x0.91.
+CAND_0037566,92,0.517449,Machine Learning Engineer with 6.9 yrs; strongest component band 1.00; behavioral x0.93.
+CAND_0079284,93,0.514318,Machine Learning Engineer with 4.9 yrs; strongest component career 1.00; behavioral x0.91.
+CAND_0057563,94,0.514317,NLP Engineer with 6.8 yrs; strongest component band 1.00; behavioral x0.89.
+CAND_0099806,95,0.511584,AI Engineer with 4.6 yrs; strongest component career 0.94; behavioral x0.97.
+CAND_0081686,96,0.511583,Search Engineer with 6.0 yrs; strongest component band 1.00; behavioral x0.85.
+CAND_0010685,97,0.511069,NLP Engineer with 6.7 yrs; strongest component band 1.00; behavioral x0.91.
+CAND_0043228,98,0.509422,Applied ML Engineer with 6.8 yrs; strongest component band 1.00; behavioral x0.89.
+CAND_0073883,99,0.506678,AI Specialist with 5.3 yrs; strongest component career 0.99; behavioral x0.98.
+CAND_0001610,100,0.506677,Machine Learning Engineer with 3.0 yrs; strongest component career 0.98; behavioral x0.89.

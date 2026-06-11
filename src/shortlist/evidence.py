@@ -60,6 +60,20 @@ def _saturation(n_terms: int) -> float:
     return min(1.0, 0.55 + 0.225 * (n_terms - 1))
 
 
+def _facet_regex(terms: list[str]) -> re.Pattern:
+    """One alternation regex per facet: ~20x fewer regex passes per candidate.
+
+    Longer terms first so 'sentence transformers' wins over 'transformer' at
+    the same position; word boundaries only where the term edge is alphanumeric.
+    """
+    parts = []
+    for t in sorted(terms, key=len, reverse=True):
+        prefix = r"\b" if t[0].isalnum() else ""
+        suffix = r"\b" if t[-1].isalnum() else ""
+        parts.append(prefix + re.escape(t) + suffix)
+    return re.compile("|".join(parts), re.IGNORECASE)
+
+
 @dataclass(slots=True)
 class FacetEvidence:
     score: float
@@ -77,11 +91,11 @@ class EvidenceEngine:
             for level in ("must_have", "nice_to_have", "contextual")
             for r in reqs[level]
         }
-        self._patterns: dict[str, list[tuple[str, re.Pattern]]] = {
-            facet: [(t, _term_pattern(t)) for t in self.ontology["facets"][facet]["terms"]]
+        self._facet_re: dict[str, re.Pattern] = {
+            facet: _facet_regex(self.ontology["facets"][facet]["terms"])
             for facet in self.active_facets
         }
-        self._cv_patterns = [(t, _term_pattern(t)) for t in CV_SPEECH_TERMS]
+        self._cv_re = _facet_regex(list(CV_SPEECH_TERMS))
         self._consulting = tuple(self.ontology["consulting_employers"])
         self.active_detectors = {d["type"] for d in spec.get("disqualifiers", [])}
 
@@ -93,11 +107,11 @@ class EvidenceEngine:
             "headline": c.headline.lower(),
         }
         out: dict[str, FacetEvidence] = {}
-        for facet, patterns in self._patterns.items():
+        for facet, rx in self._facet_re.items():
             best = FacetEvidence(0.0)
             for name, weight in SECTION_WEIGHTS.items():
                 text = sections[name]
-                terms = [t for t, p in patterns if p.search(text)]
+                terms = sorted({m.lower() for m in rx.findall(text)})
                 score = weight * _saturation(len(terms))
                 if score > best.score:
                     best = FacetEvidence(round(score, 4), terms[:6], name)
@@ -125,7 +139,7 @@ class EvidenceEngine:
                 out["research_only"] = round(share * (1.0 - production), 3)
 
         if "cv_speech_only" in self.active_detectors:
-            cv_terms = [t for t, p in self._cv_patterns if p.search(c.narrative_lc)]
+            cv_terms = sorted({m.lower() for m in self._cv_re.findall(c.narrative_lc)})
             ir_score = max(
                 facet_ev.get(f, FacetEvidence(0)).score
                 for f in ("nlp_ir", "embeddings_retrieval", "ranking_recsys", "vector_infra")
@@ -166,10 +180,9 @@ class EvidenceEngine:
                 j
                 for j in c.jobs
                 if any(
-                    p.search(j.description.lower())
+                    self._facet_re[f].search(j.description)
                     for f in AI_FACETS
-                    if f in self._patterns
-                    for _, p in self._patterns[f]
+                    if f in self._facet_re
                 )
             ]
             if ai_jobs:
