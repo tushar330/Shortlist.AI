@@ -1,0 +1,67 @@
+candidate_id,current_title,country,checks,details
+CAND_0003430,Business Analyst,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 13.7 yrs but career history sums to 1.2 yrs | Business Analyst at Infosys: dates span 15 months but duration_months says 11
+CAND_0003582,Mobile Developer,India,expert_skills_never_used,"3 skills claimed at expert proficiency with 0 months of use: MLflow, Photoshop, Content Writing"
+CAND_0005291,Business Analyst,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 12.8 yrs but career history sums to 2.8 yrs | Business Analyst at Hooli: dates span 33 months but duration_months says 11
+CAND_0007353,Frontend Engineer,India,job_duration_contradicts_dates,Frontend Engineer at Wayne Enterprises: dates span 33 months but duration_months says 166
+CAND_0007413,Business Analyst,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 13.3 yrs but career history sums to 3.6 yrs | Business Analyst at Globex Inc: dates span 43 months but duration_months says 16
+CAND_0008960,Graphic Designer,India,job_duration_contradicts_dates,Graphic Designer at Stark Industries: dates span 21 months but duration_months says 171
+CAND_0010294,.NET Developer,India,job_duration_contradicts_dates,.NET Developer at Mphasis: dates span 19 months but duration_months says 144
+CAND_0010770,Recommendation Systems Engineer,India,stated_experience_contradicts_history,profile claims 15.2 yrs but career history sums to 7.2 yrs
+CAND_0013536,Applied ML Engineer,India,stated_experience_contradicts_history,profile claims 14.1 yrs but career history sums to 4.7 yrs
+CAND_0016000,Full Stack Developer,Australia,expert_skills_never_used,"5 skills claimed at expert proficiency with 0 months of use: TypeScript, Go, Docker, Hadoop, Photoshop"
+CAND_0018515,Marketing Manager,India,job_duration_contradicts_dates,Marketing Manager at Initech: dates span 39 months but duration_months says 150
+CAND_0019480,NLP Engineer,India,stated_experience_contradicts_history,profile claims 2.8 yrs but career history sums to 7.2 yrs
+CAND_0024752,Civil Engineer,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 14.9 yrs but career history sums to 4.0 yrs | Civil Engineer at Hooli: dates span 48 months but duration_months says 8
+CAND_0025579,HR Manager,USA,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 12.9 yrs but career history sums to 2.2 yrs | HR Manager at Acme Corp: dates span 26 months but duration_months says 12
+CAND_0033131,Operations Manager,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 12.7 yrs but career history sums to 2.8 yrs | Operations Manager at Pied Piper: dates span 33 months but duration_months says 16
+CAND_0033817,HR Manager,Germany,expert_skills_never_used,"4 skills claimed at expert proficiency with 0 months of use: JavaScript, BigQuery, Six Sigma, gRPC"
+CAND_0033972,QA Engineer,India,expert_skills_never_used,"3 skills claimed at expert proficiency with 0 months of use: Airflow, OpenCV, Figma"
+CAND_0035104,Software Engineer,India,job_duration_contradicts_dates,Software Engineer at Cognizant: dates span 18 months but duration_months says 114
+CAND_0036299,Mobile Developer,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 12.2 yrs but career history sums to 3.7 yrs | Mobile Developer at Cognizant: dates span 44 months but duration_months says 8
+CAND_0036839,Operations Manager,India,expert_skills_never_used,"3 skills claimed at expert proficiency with 0 months of use: SAP, GCP, Rust"
+CAND_0037539,Project Manager,India,job_duration_contradicts_dates,Project Manager at Stark Industries: dates span 49 months but duration_months says 106
+CAND_0038431,Mobile Developer,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 15.0 yrs but career history sums to 3.7 yrs | Mobile Developer at Razorpay: dates span 44 months but duration_months says 16
+CAND_0039754,Senior Applied Scientist,India,stated_experience_contradicts_history,profile claims 16.2 yrs but career history sums to 8.1 yrs
+CAND_0040075,Marketing Manager,UAE,job_duration_contradicts_dates,Marketing Manager at Pied Piper: dates span 39 months but duration_months says 228
+CAND_0040853,Operations Manager,India,job_duration_contradicts_dates,Operations Manager at Initech: dates span 13 months but duration_months says 61
+CAND_0042245,Business Analyst,India,expert_skills_never_used,"3 skills claimed at expert proficiency with 0 months of use: Databricks, BentoML, Vue.js"
+CAND_0042453,Marketing Manager,India,job_duration_contradicts_dates,Marketing Manager at Pied Piper: dates span 50 months but duration_months says 98
+CAND_0043721,Sales Executive,USA,job_duration_contradicts_dates,Sales Executive at Initech: dates span 48 months but duration_months says 102
+CAND_0046649,Business Analyst,India,expert_skills_never_used,"5 skills claimed at expert proficiency with 0 months of use: SAP, Node.js, gRPC, Flask, Hadoop"
+CAND_0046689,Business Analyst,Canada,expert_skills_never_used,"4 skills claimed at expert proficiency with 0 months of use: Node.js, SQL, gRPC, Spark"
+CAND_0048740,HR Manager,India,expert_skills_never_used,"3 skills claimed at expert proficiency with 0 months of use: gRPC, Angular, Content Writing"
+CAND_0052478,Marketing Manager,India,stated_experience_contradicts_history,profile claims 12.4 yrs but career history sums to 1.3 yrs
+CAND_0053734,Sales Executive,India,job_duration_contradicts_dates,Sales Executive at Globex Inc: dates span 32 months but duration_months says 151
+CAND_0055685,Customer Support,India,job_duration_contradicts_dates,Customer Support at Acme Corp: dates span 16 months but duration_months says 64
+CAND_0055792,.NET Developer,India,expert_skills_never_used,"3 skills claimed at expert proficiency with 0 months of use: Scrum, TTS, LoRA"
+CAND_0055992,AI Engineer,Australia,stated_experience_contradicts_history,profile claims 16.9 yrs but career history sums to 6.6 yrs
+CAND_0056983,Accountant,India,expert_skills_never_used,"5 skills claimed at expert proficiency with 0 months of use: Rust, Next.js, Redis, Salesforce CRM, MongoDB"
+CAND_0057711,Java Developer,India,job_duration_contradicts_dates,Java Developer at Capgemini: dates span 51 months but duration_months says 140
+CAND_0060642,Frontend Engineer,Australia,expert_skills_never_used,"5 skills claimed at expert proficiency with 0 months of use: Milvus, Agile, Azure, Diffusion Models, MongoDB"
+CAND_0061722,Software Engineer,UK,expert_skills_never_used,"5 skills claimed at expert proficiency with 0 months of use: Terraform, GANs, Milvus, MongoDB, Speech Recognition"
+CAND_0063888,.NET Developer,India,expert_skills_never_used,"5 skills claimed at expert proficiency with 0 months of use: Project Management, Accounting, MLOps, React, Webpack"
+CAND_0064077,Project Manager,India,job_duration_contradicts_dates,Project Manager at Hooli: dates span 51 months but duration_months says 169
+CAND_0065096,Civil Engineer,India,expert_skills_never_used,"4 skills claimed at expert proficiency with 0 months of use: ETL, Tally, Flask, Rust"
+CAND_0065710,Marketing Manager,India,job_duration_contradicts_dates,Marketing Manager at Hooli: dates span 38 months but duration_months says 100
+CAND_0065787,Java Developer,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 10.9 yrs but career history sums to 2.7 yrs | Java Developer at HCL: dates span 32 months but duration_months says 14
+CAND_0066405,Cloud Engineer,USA,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 12.3 yrs but career history sums to 2.6 yrs | Cloud Engineer at Initech: dates span 31 months but duration_months says 13
+CAND_0070189,Operations Manager,India,job_duration_contradicts_dates,Operations Manager at Wayne Enterprises: dates span 39 months but duration_months says 130
+CAND_0070429,Software Engineer,India,expert_skills_never_used,"5 skills claimed at expert proficiency with 0 months of use: MLOps, Figma, Accounting, YOLO, Java"
+CAND_0071115,Recommendation Systems Engineer,India,stated_experience_contradicts_history,profile claims 16.5 yrs but career history sums to 5.8 yrs
+CAND_0072379,Content Writer,India,expert_skills_never_used,"4 skills claimed at expert proficiency with 0 months of use: Azure, Redux, Illustrator, Spark"
+CAND_0073853,Operations Manager,UAE,expert_skills_never_used,"5 skills claimed at expert proficiency with 0 months of use: CI/CD, Marketing, GCP, Excel, AWS"
+CAND_0074119,Content Writer,USA,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 11.4 yrs but career history sums to 2.1 yrs | Content Writer at Globex Inc: dates span 25 months but duration_months says 13
+CAND_0077239,Content Writer,India,job_duration_contradicts_dates,Content Writer at Dunder Mifflin: dates span 49 months but duration_months says 139
+CAND_0077250,Project Manager,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 13.1 yrs but career history sums to 2.7 yrs | Project Manager at Wayne Enterprises: dates span 32 months but duration_months says 18
+CAND_0084182,Civil Engineer,India,job_duration_contradicts_dates,Civil Engineer at Hooli: dates span 51 months but duration_months says 200
+CAND_0086808,Graphic Designer,USA,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 11.4 yrs but career history sums to 1.6 yrs | Graphic Designer at TCS: dates span 19 months but duration_months says 15
+CAND_0090900,Senior Data Engineer,USA,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 11.7 yrs but career history sums to 3.2 yrs | Senior Data Engineer at PolicyBazaar: dates span 38 months but duration_months says 9
+CAND_0091068,HR Manager,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 12.7 yrs but career history sums to 2.2 yrs | HR Manager at TCS: dates span 27 months but duration_months says 12
+CAND_0091534,AI Engineer,India,stated_experience_contradicts_history,profile claims 16.6 yrs but career history sums to 7.0 yrs
+CAND_0093331,NLP Engineer,India,stated_experience_contradicts_history,profile claims 16.1 yrs but career history sums to 7.1 yrs
+CAND_0093364,Business Analyst,India,job_duration_contradicts_dates,Business Analyst at Globex Inc: dates span 26 months but duration_months says 142
+CAND_0095140,Backend Engineer,Canada,expert_skills_never_used,"3 skills claimed at expert proficiency with 0 months of use: Kafka, QLoRA, CNN"
+CAND_0095317,HR Manager,Canada,expert_skills_never_used,"3 skills claimed at expert proficiency with 0 months of use: Webpack, Figma, dbt"
+CAND_0095480,.NET Developer,India,expert_skills_never_used,"4 skills claimed at expert proficiency with 0 months of use: Agile, React, Snowflake, Content Writing"
+CAND_0095619,NLP Engineer,India,stated_experience_contradicts_history,profile claims 15.6 yrs but career history sums to 4.2 yrs
+CAND_0096150,Accountant,India,stated_experience_contradicts_history; job_duration_contradicts_dates,profile claims 14.7 yrs but career history sums to 2.1 yrs | Accountant at Wipro: dates span 25 months but duration_months says 10
