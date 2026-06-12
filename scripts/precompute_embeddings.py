@@ -46,14 +46,21 @@ def main() -> None:
         texts.append(narrative_text(c))
     print(f"loaded {len(ids):,} narratives in {time.time() - t0:.1f}s")
 
+    # Expect roughly 8 docs/s/laptop-core-set on full-length narratives:
+    # ~3.5 hours for the 100K pool. One-time cost; the rank step only loads
+    # the finished cache.
     vecs = np.empty((len(ids), 384), dtype=np.float16)
     done = 0
     for vec in model.embed(texts, batch_size=args.batch):
         vecs[done] = vec.astype(np.float16)
         done += 1
-        if done % 10000 == 0:
+        if done % 2000 == 0:
             rate = done / (time.time() - t0)
-            print(f"  embedded {done:,}/{len(ids):,}  ({rate:.0f}/s, eta {(len(ids)-done)/rate/60:.1f} min)")
+            print(
+                f"  embedded {done:,}/{len(ids):,}  ({rate:.0f}/s, "
+                f"eta {(len(ids) - done) / rate / 60:.1f} min)",
+                flush=True,
+            )
 
     spec = yaml.safe_load(open(args.spec, encoding="utf-8"))
     query_vecs = np.array(list(model.query_embed(spec_queries(spec))), dtype=np.float16)
